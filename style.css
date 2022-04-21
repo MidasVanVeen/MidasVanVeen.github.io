@@ -12,10 +12,10 @@ h1, h2, h3, h4, h5, h6, p {
 
 #name_span {
   color: #cc243d;
-  transition: 0.5s;
   font-weight: 600;
 }
 
 #name_span:hover {
+  transition: 0.5s;
   text-decoration: underline;
 }
