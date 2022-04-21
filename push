@@ -1,4 +1,5 @@
 #!/bin/bash
+sass style.scss > style.css
 git add ./*
 git commit -m "."
 cat ~/repokey.txt
