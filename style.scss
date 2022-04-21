@@ -1,0 +1,17 @@
+$bg: #fbf1c7;
+$fg: #3c3836;
+$red: #cc243d;
+
+html,body {
+	background-color: $bg;
+	padding:0;
+	margin:0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	color: $fg;
+}
+
+span {
+	color: $red;
+}
