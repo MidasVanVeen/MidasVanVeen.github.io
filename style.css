@@ -8,7 +8,6 @@ html, body {
 main {
   display: flex;
   flex-direction: column;
-  padding: 40px;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -16,11 +15,56 @@ h1, h2, h3, h4, h5, h6, p {
   color: #3c3836;
 }
 
+article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+article div {
+  width: 50vw;
+}
+
 #name_span {
   color: #cc243d;
+  text-decoration: none;
 }
 
 #name_span:hover {
   transition: 0.5s;
   text-decoration: underline;
+}
+
+#contact_form input, #contact_form textarea {
+  background-color: #3c3836;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  color: #fbf1c7;
+}
+
+#logo_background {
+  background-color: #3c3836;
+  width: 180px;
+  height: 180px;
+}
+
+.logo_div {
+  background-image: url("assets/logo.jpg");
+  width: 160px;
+  height: 160px;
+  margin: 10px;
+}
+
+.rounded {
+  border-radius: 160px;
+}
+
+.bgl {
+  fill: #ebdbb2;
+}
+
+article.bgl {
+  background-color: #ebdbb2;
 }
