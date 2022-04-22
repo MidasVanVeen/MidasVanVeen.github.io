@@ -22,8 +22,16 @@ article {
   padding: 40px;
 }
 
+article.projects {
+  flex-direction: column;
+}
+
 article div {
   width: 50vw;
+}
+
+article.projects div {
+  width: auto;
 }
 
 #name_span {
@@ -40,16 +48,17 @@ h1 a:hover {
 }
 
 ::placeholder {
-  color: #fbf1c7;
+  color: #3c3836;
   opacity: 0.95;
 }
 
 #contact_form input, #contact_form textarea {
-  background-color: #3c3836;
+  background-color: #ebdbb2;
   padding: 10px;
   margin: 5px;
   border-radius: 5px;
-  color: #fbf1c7;
+  border: 2px solid #d5c4a1;
+  color: #3c3836;
   outline: none;
 }
 
@@ -93,4 +102,21 @@ article.bgd {
 
 #skills_span {
   color: #458588;
+}
+
+#projects_div {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  justify-content: space-between;
+}
+
+.project_item {
+  background-color: #fbf1c7;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  border: 2px solid #d5c4a1;
 }

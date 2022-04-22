@@ -8,6 +8,7 @@ $fg: #3c3836;
 $red: #cc243d;
 $green: #98971a;
 $blue: #458588;
+$orange: #d65d0e;
 
 html,body {
 	background-color: $bg;
@@ -32,8 +33,15 @@ article {
 	padding:40px;
 }
 
+article.projects {
+	flex-direction: column;
+}
+
 article div {
 	width: 50vw;
+}
+article.projects div {
+	width: auto;
 }
 
 #name_span {
@@ -50,16 +58,17 @@ h1 a:hover {
 }
 
 ::placeholder {
-	color: $bg;
+	color: $fg;
 	opacity: 0.95;
 }
 
 #contact_form input, #contact_form textarea {
-	background-color: $fg;
+	background-color: $bgl;
 	padding: 10px;
 	margin: 5px;
 	border-radius: 5px;
-	color: $bg;
+	border: 2px solid $bgd;
+	color: $fg;
 	outline:none;
 }
 
@@ -104,3 +113,21 @@ article.bgd {
 #skills_span {
 	color: $blue;
 }
+
+#projects_div {
+	display: flex;
+	flex-direction: row;
+	width: auto;
+	justify-content: space-between;
+}
+
+.project_item {
+	background-color: $bg;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius:20px;
+	border: 2px solid $bgd;
+}
+
