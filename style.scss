@@ -2,8 +2,12 @@
 
 $bg: #fbf1c7;
 $bgl: #ebdbb2;
+$bgd: #d5c4a1;
+$grey: #928374;
 $fg: #3c3836;
 $red: #cc243d;
+$green: #98971a;
+$blue: #458588;
 
 html,body {
 	background-color: $bg;
@@ -34,12 +38,20 @@ article div {
 
 #name_span {
 	color: $red;
+}
+
+h1 a {
 	text-decoration: none;
 }
 
-#name_span:hover {
+h1 a:hover {
 	transition: 0.5s;
 	text-decoration: underline;
+}
+
+::placeholder {
+	color: $bg;
+	opacity: 0.95;
 }
 
 #contact_form input, #contact_form textarea {
@@ -48,6 +60,7 @@ article div {
 	margin: 5px;
 	border-radius: 5px;
 	color: $bg;
+	outline:none;
 }
 
 #logo_background {
@@ -73,4 +86,21 @@ article div {
 
 article.bgl {
 	background-color: $bgl;
+}
+
+svg.bg {
+	fill: $bgd;
+	background-color: $bgl;
+}
+
+article.bgd {
+	background-color: $bgd;
+}
+
+#projects_span {
+	color: $green;
+}
+
+#skills_span {
+	color: $blue;
 }

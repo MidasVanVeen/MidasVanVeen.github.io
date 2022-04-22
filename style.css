@@ -28,12 +28,20 @@ article div {
 
 #name_span {
   color: #cc243d;
+}
+
+h1 a {
   text-decoration: none;
 }
 
-#name_span:hover {
+h1 a:hover {
   transition: 0.5s;
   text-decoration: underline;
+}
+
+::placeholder {
+  color: #fbf1c7;
+  opacity: 0.95;
 }
 
 #contact_form input, #contact_form textarea {
@@ -42,6 +50,7 @@ article div {
   margin: 5px;
   border-radius: 5px;
   color: #fbf1c7;
+  outline: none;
 }
 
 #logo_background {
@@ -67,4 +76,21 @@ article div {
 
 article.bgl {
   background-color: #ebdbb2;
+}
+
+svg.bg {
+  fill: #d5c4a1;
+  background-color: #ebdbb2;
+}
+
+article.bgd {
+  background-color: #d5c4a1;
+}
+
+#projects_span {
+  color: #98971a;
+}
+
+#skills_span {
+  color: #458588;
 }
