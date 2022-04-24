@@ -1,0 +1,8 @@
+#!/bin/bash
+cat dark.scss > dark.tmp
+cat style.scss >> dark.tmp && cat dark.tmp 
+sass dark.tmp > darkstyle.css
+cat light.scss > light.tmp
+cat style.scss >> light.tmp && cat light.tmp
+sass light.tmp > lightstyle.css
+rm *.tmp

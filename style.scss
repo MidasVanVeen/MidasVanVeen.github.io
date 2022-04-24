@@ -5,9 +5,6 @@
 	src: url('fonts/Tomatoes-O8L8.ttf');
 }
 
-//@import 'lightcolors.scss';
-@import 'darkcolors.scss';
-
 html,body {
 	background-color: $bg;
 	padding:0;
@@ -101,6 +98,7 @@ h1 a:hover {
 	position: absolute;
 	right: 200px;
 	top: 200px;
+	text-decoration: underline;
 }
 
 #darkmode_arrow {
@@ -108,7 +106,6 @@ h1 a:hover {
 	position: absolute;
 	top: 170px;
 	right: 230px;
-	filter: invert(100%);
 }
 
 .bgl {

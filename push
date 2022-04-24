@@ -1,4 +1,5 @@
 #!/bin/bash
+./build
 git add ./*
 git commit -m "."
 cat ~/repokey.txt

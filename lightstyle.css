@@ -97,6 +97,7 @@ h1 a:hover {
   position: absolute;
   right: 200px;
   top: 200px;
+  text-decoration: underline;
 }
 
 #darkmode_arrow {
