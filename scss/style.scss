@@ -39,6 +39,7 @@ article.skills {
 article div {
 	width: 50vw;
 }
+
 article.projects div {
 	width: auto;
 }
@@ -50,14 +51,14 @@ article.skills div {
 #skills_div {
 	display: flex;
 	flex-direction: row;
-    justify-content: space-around;
-    background-color: $bgd;
+	background-color: $bg
 }
 
 .list_div {
     background-color: $bgl;
     padding: 20px;
-    outline: $bg;
+	margin: 20px;
+    outline: 2px solid $bgd;
     border-radius: 20px;
 }
 
@@ -146,12 +147,12 @@ article.bgl {
 }
 
 svg.bg {
-	fill: $bgd;
+	fill: $bg;
 	background-color: $bgl;
 }
 
-article.bgd {
-	background-color: $bgd;
+article.bg {
+	background-color: $bg;
 }
 
 #projects_span {
@@ -177,7 +178,15 @@ article.bgd {
 	padding-bottom: 10px;
 	border-radius:20px;
 	border: 2px solid $bgd;
+	cursor: pointer;
+	transition: 0.5s ease-in-out;
 }
+
+.project_item:hover {
+	transition: 0.5s ease-in-out;
+	box-shadow: 10px 10px 20px $bgd;
+}
+
 
 @media only screen and (max-width: 800px) {
 	.mobile_hide {
@@ -198,4 +207,3 @@ article.bgd {
 		flex-direction: column;
 	}
 }
-

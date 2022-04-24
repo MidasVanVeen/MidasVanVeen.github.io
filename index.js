@@ -5,7 +5,7 @@ const div = document.getElementById("projects_div");
 fetch(projects_request).then(resp => {
 	resp.json().then(data => {
 		for (let i = 0; i < data.length; i++) {
-			projects_div.innerHTML += '<div class="project_item"><h1>' + data[i]['name'] + '</h1><p>' + data[i]['description'] + '</p></div>';
+			projects_div.innerHTML += '<div onclick="window.location.href=\'' + data[i]['html_url'] + '\'" class="project_item"><h1>' + data[i]['name'] + '</h1><p>' + data[i]['description'] + '</p></div>';
 		}
 	});
 });

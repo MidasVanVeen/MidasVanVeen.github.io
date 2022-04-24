@@ -49,14 +49,14 @@ article.skills div {
 #skills_div {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  background-color: #d5c4a1;
+  background-color: #fbf1c7;
 }
 
 .list_div {
   background-color: #ebdbb2;
   padding: 20px;
-  outline: #fbf1c7;
+  margin: 20px;
+  outline: 2px solid #d5c4a1;
   border-radius: 20px;
 }
 
@@ -152,12 +152,12 @@ article.bgl {
 }
 
 svg.bg {
-  fill: #d5c4a1;
+  fill: #fbf1c7;
   background-color: #ebdbb2;
 }
 
-article.bgd {
-  background-color: #d5c4a1;
+article.bg {
+  background-color: #fbf1c7;
 }
 
 #projects_span {
@@ -183,6 +183,13 @@ article.bgd {
   padding-bottom: 10px;
   border-radius: 20px;
   border: 2px solid #d5c4a1;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.project_item:hover {
+  transition: 0.5s ease-in-out;
+  box-shadow: 10px 10px 20px #d5c4a1;
 }
 
 @media only screen and (max-width: 800px) {
