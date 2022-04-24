@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>Midas van Veen</title>
-		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link id="pagestyle" rel="stylesheet" type="text/css" href="lightstyle.css"/>
 	</head>
 
 	<body>
@@ -21,7 +21,9 @@
 						<textarea rows="3" cols="42" placeholder="Message"></textarea>
 					</form>
 				</div>
-				<div class="rounded" id="logo_background"><div class="rounded logo_div"></div></div>
+				<div onclick="toggleMode()" class="rounded" id="logo_background"><div class="rounded logo_div"></div></div>
+				<p id="darkmode_msg">Click me for dark mode!</p>
+				<img src="assets/arrow.png" id="darkmode_arrow">
 			</article>
 
 			<svg class="bgl" viewBox="0 0 1920 240" xmlns="http://www.w3.org/2000/svg">
@@ -35,8 +37,32 @@
 
 			<svg class="bg" viewBox="0 0 1920 240" xmlns="http://www.w3.org/2000/svg"><path d="M0 0c62.028 23.301 207.726 31.062 355.345 10.956 194.93-26.548 329.274 58.551 412.36 95.275 113.991 50.379 161.026 36.177 242.491 47.604 81.464 11.428 80.28 30.32 167.409 35.339 99.802 5.746 258.527-51.115 385.457-10.565 156.954 50.136 300.814-6.06 356.938 1.225V240H0V0z"></path></svg>
 
-			<article class="bgd">
+			<article class="bgd skills">
 				<h1>My <a href="https://github.com/midasvanveen" id="skills_span">Skills</a></h1>
+				<div id="skills_div">
+					<div>
+						<h2>Programming languages</h2>
+						<ul>
+							<li>C</li>
+							<li>C++</li>
+							<li>Python</li>
+							<li>Javascript</li>
+							<li>Java</li>
+							<li>Rust</li>
+							<li>Go</li>
+							<li>etc...</li>
+						</ul>
+					</div>
+					<div>
+						<h2>Frameworks / technologies</h2>
+						<ul>
+							<li>Node.js</li>
+							<li>Glut</li>
+							<li>Matplotlib</li>
+							<li>etc...</li>
+						</ul>
+					</div>
+				</div>
 			</article>
 		</main>
 		<script src="index.js"></script>

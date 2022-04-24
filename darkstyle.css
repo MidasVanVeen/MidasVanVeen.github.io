@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+@font-face {
+  font-family: Tomatoes;
+  src: url("fonts/Tomatoes-O8L8.ttf");
+}
 html, body {
-  background-color: #fbf1c7;
+  background-color: #282828;
   padding: 0;
   margin: 0;
 }
@@ -10,9 +14,9 @@ main {
   flex-direction: column;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, li {
   font-family: "Source Sans Pro";
-  color: #3c3836;
+  color: #ebdbb2;
 }
 
 article {
@@ -44,7 +48,7 @@ article.projects div {
 }
 
 #name_span {
-  color: #cc243d;
+  color: #fb4934;
 }
 
 h1 a {
@@ -57,22 +61,22 @@ h1 a:hover {
 }
 
 ::placeholder {
-  color: #3c3836;
+  color: #ebdbb2;
   opacity: 0.95;
 }
 
 #contact_form input, #contact_form textarea {
-  background-color: #ebdbb2;
+  background-color: #3c3836;
   padding: 10px;
   margin: 5px;
   border-radius: 5px;
-  border: 2px solid #d5c4a1;
-  color: #3c3836;
+  border: 2px solid #504945;
+  color: #ebdbb2;
   outline: none;
 }
 
 #logo_background {
-  background-color: #3c3836;
+  background-color: #ebdbb2;
   width: 180px;
   height: 180px;
 }
@@ -88,29 +92,44 @@ h1 a:hover {
   border-radius: 160px;
 }
 
+#darkmode_msg {
+  font-family: "Tomatoes";
+  position: absolute;
+  right: 200px;
+  top: 200px;
+}
+
+#darkmode_arrow {
+  width: 50px;
+  position: absolute;
+  top: 170px;
+  right: 230px;
+  filter: invert(100%);
+}
+
 .bgl {
-  fill: #ebdbb2;
+  fill: #3c3836;
 }
 
 article.bgl {
-  background-color: #ebdbb2;
+  background-color: #3c3836;
 }
 
 svg.bg {
-  fill: #d5c4a1;
-  background-color: #ebdbb2;
+  fill: #504945;
+  background-color: #3c3836;
 }
 
 article.bgd {
-  background-color: #d5c4a1;
+  background-color: #504945;
 }
 
 #projects_span {
-  color: #98971a;
+  color: #b8bb26;
 }
 
 #skills_span {
-  color: #458588;
+  color: #83a598;
 }
 
 #projects_div {
@@ -122,12 +141,12 @@ article.bgd {
 }
 
 .project_item {
-  background-color: #fbf1c7;
+  background-color: #282828;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 20px;
   border-radius: 20px;
-  border: 2px solid #d5c4a1;
+  border: 2px solid #504945;
 }

@@ -7,6 +7,25 @@ fetch(projects_request).then(resp => {
 		for (let i = 0; i < data.length; i++) {
 			projects_div.innerHTML += '<div class="project_item"><h1>' + data[i]['name'] + '</h1><p>' + data[i]['description'] + '</p></div>';
 		}
-	})
-})
+	});
+});
 
+var mode = 'light';
+
+function toggleMode() {
+	if (mode === 'light') {
+		setDarkMode();
+		mode = 'dark';
+	} else if (mode === 'dark') {
+		setLightMode();
+		mode = 'light';
+	}
+}
+
+function setDarkMode() {
+	document.getElementById('pagestyle').href = 'darkstyle.css';
+}
+
+function setLightMode() {
+	document.getElementById('pagestyle').href = 'lightstyle.css';
+}

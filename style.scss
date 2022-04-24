@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
-$bg: #fbf1c7;
-$bgl: #ebdbb2;
-$bgd: #d5c4a1;
-$grey: #928374;
-$fg: #3c3836;
-$red: #cc243d;
-$green: #98971a;
-$blue: #458588;
-$orange: #d65d0e;
+@font-face {
+	font-family: Tomatoes;
+	src: url('fonts/Tomatoes-O8L8.ttf');
+}
+
+//@import 'lightcolors.scss';
+@import 'darkcolors.scss';
 
 html,body {
 	background-color: $bg;
@@ -21,7 +19,7 @@ main {
 	flex-direction: column;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, li {
 	font-family: 'Source Sans Pro';
 	color: $fg;
 }
@@ -37,11 +35,20 @@ article.projects {
 	flex-direction: column;
 }
 
+article.skills { 
+	flex-direction: column;
+}
+
 article div {
 	width: 50vw;
 }
 article.projects div {
 	width: auto;
+}
+
+#skills_div {
+	display: flex;
+	flex-direction: row;
 }
 
 #name_span {
@@ -87,6 +94,21 @@ h1 a:hover {
 
 .rounded {
 	border-radius: 160px;
+}
+
+#darkmode_msg {
+	font-family: 'Tomatoes';
+	position: absolute;
+	right: 200px;
+	top: 200px;
+}
+
+#darkmode_arrow {
+	width: 50px;
+	position: absolute;
+	top: 170px;
+	right: 230px;
+	filter: invert(100%);
 }
 
 .bgl {
