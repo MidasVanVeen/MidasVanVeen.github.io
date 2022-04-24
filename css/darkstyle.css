@@ -46,9 +46,22 @@ article.projects div {
   width: auto;
 }
 
+article.skills div {
+  width: auto;
+}
+
 #skills_div {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  background-color: #504945;
+}
+
+.list_div {
+  background-color: #3c3836;
+  padding: 20px;
+  outline: #282828;
+  border-radius: 20px;
 }
 
 #name_span {
