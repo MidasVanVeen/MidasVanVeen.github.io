@@ -2,7 +2,7 @@
 
 @font-face {
 	font-family: Tomatoes;
-	src: url('fonts/Tomatoes-O8L8.ttf');
+	src: url('/fonts/Tomatoes-O8L8.ttf');
 }
 
 html,body {
@@ -66,14 +66,31 @@ h1 a:hover {
 	opacity: 0.95;
 }
 
+#contact_form {
+	display: grid;
+	grid-template-columns: 1fr, 1fr;
+	grid-template-rows: 0.6fr 1.4fr;
+	grid-gap: 20px;
+	grid-template-areas: 
+		"name email"
+		"message message";
+}
+#name_input {grid-area: name;}
+#email_input {grid-area: email;}
+#message_input {grid-area: message;}
+
 #contact_form input, #contact_form textarea {
 	background-color: $bgl;
 	padding: 10px;
-	margin: 5px;
 	border-radius: 5px;
 	border: 2px solid $bgd;
 	color: $fg;
 	outline:none;
+}
+
+#contact_form textarea {
+	grid-column-start: 1;
+	grid-column-end: 3;
 }
 
 #logo_background {
@@ -98,7 +115,6 @@ h1 a:hover {
 	position: absolute;
 	right: 200px;
 	top: 200px;
-	text-decoration: underline;
 }
 
 #darkmode_arrow {
@@ -148,5 +164,25 @@ article.bgd {
 	padding-bottom: 10px;
 	border-radius:20px;
 	border: 2px solid $bgd;
+}
+
+@media only screen and (max-width: 800px) {
+	.mobile_hide {
+		display: none;
+	}
+
+	article div, article.projects div{
+		width: 90vw;
+	}
+
+	article {
+		width: 100vw;
+	}
+	#projects_div {
+		grid-template-columns: auto;
+	}
+	#skills_div {
+		flex-direction: column;
+	}
 }
 

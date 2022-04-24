@@ -1,8 +1,8 @@
 #!/bin/bash
 cat scss/dark.scss > dark.tmp
-cat scss/style.scss >> dark.tmp && cat dark.tmp 
-sass dark.tmp > css/darkstyle.css
+cat scss/style.scss >> dark.tmp  
+sass dark.tmp > css/darkstyle.css && echo 'Built dark'
 cat scss/light.scss > light.tmp
-cat scss/style.scss >> light.tmp && cat light.tmp
-sass light.tmp > css/lightstyle.css
-rm *.tmp
+cat scss/style.scss >> light.tmp
+sass light.tmp > css/lightstyle.css && echo 'Built light'
+rm *.tmp && echo 'Cleanup successful'
