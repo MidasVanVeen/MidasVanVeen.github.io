@@ -23,7 +23,7 @@ function toggleMode() {
 }
 
 function setDarkMode() {
-	document.getElementById('pagestyle_dark').href = 'darkstyle.css';
+	document.getElementById('pagestyle_dark').href = 'css/darkstyle.css';
 }
 
 function setLightMode() {
