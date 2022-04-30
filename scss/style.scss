@@ -140,7 +140,7 @@ h1 a:hover {
 
 .bgl {
 	fill: $bgl;
-} 
+}
 
 article.bgl {
 	background-color: $bgl;
@@ -181,12 +181,6 @@ article.bg {
 	cursor: pointer;
 	transition: 0.5s ease-in-out;
 }
-
-.project_item:hover {
-	transition: 0.5s ease-in-out;
-	box-shadow: 10px 10px 20px $bgd;
-}
-
 
 @media only screen and (max-width: 800px) {
 	.mobile_hide {

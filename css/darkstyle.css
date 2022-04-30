@@ -3,6 +3,11 @@
   filter: invert(100%);
 }
 
+.project_item:hover {
+  transition: 0.5s ease-in-out;
+  box-shadow: 10px 10px 20px #282828;
+}
+
 @font-face {
   font-family: Tomatoes;
   src: url("/fonts/Tomatoes-O8L8.ttf");
@@ -189,11 +194,6 @@ article.bg {
   border: 2px solid #504945;
   cursor: pointer;
   transition: 0.5s ease-in-out;
-}
-
-.project_item:hover {
-  transition: 0.5s ease-in-out;
-  box-shadow: 10px 10px 20px #504945;
 }
 
 @media only screen and (max-width: 800px) {

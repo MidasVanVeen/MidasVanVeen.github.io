@@ -3,6 +3,14 @@ var mode = "dark";
 if (getCookie("mode") === "light") {
     mode = "light";
 }
+window.onload = () => {
+    if (mode === 'dark') {
+        setDarkMode();
+    }
+    else if (mode === 'light') {
+        setLightMode();
+    }
+};
 function toggleMode() {
     if (mode === 'light') {
         setDarkMode();

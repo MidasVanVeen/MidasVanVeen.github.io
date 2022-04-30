@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+.project_item:hover {
+  transition: 0.5s ease-in-out;
+  box-shadow: 10px 10px 20px #d5c4a1;
+}
+
 @font-face {
   font-family: Tomatoes;
   src: url("/fonts/Tomatoes-O8L8.ttf");
@@ -185,11 +190,6 @@ article.bg {
   border: 2px solid #d5c4a1;
   cursor: pointer;
   transition: 0.5s ease-in-out;
-}
-
-.project_item:hover {
-  transition: 0.5s ease-in-out;
-  box-shadow: 10px 10px 20px #d5c4a1;
 }
 
 @media only screen and (max-width: 800px) {
