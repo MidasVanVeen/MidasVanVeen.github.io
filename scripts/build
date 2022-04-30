@@ -6,3 +6,5 @@ cat scss/light.scss > light.tmp
 cat scss/style.scss >> light.tmp
 sass light.tmp > css/lightstyle.css && echo 'Built light'
 rm *.tmp && echo 'Cleanup successful'
+
+tsc
