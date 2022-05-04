@@ -201,6 +201,10 @@ article.bg {
     display: none;
   }
 
+  #contact_form {
+    display: none;
+  }
+
   article div, article.projects div {
     width: 90vw;
   }
