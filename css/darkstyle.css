@@ -216,7 +216,7 @@ article.bg {
     width: 100vw;
   }
 
-  #projects_div {
+  .projects_div {
     grid-template-columns: auto;
   }
 
