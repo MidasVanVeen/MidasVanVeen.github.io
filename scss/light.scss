@@ -1,5 +1,9 @@
 @import 'scss/lightcolors.scss';
 
+.logo_div {
+	background-image: url("/assets/logo_dark.png");
+}
+
 .project_item:hover {
 	transition: 0.5s ease-in-out;
 	box-shadow: 10px 10px 20px $bgd;

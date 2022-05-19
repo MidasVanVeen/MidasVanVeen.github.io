@@ -1,5 +1,9 @@
 @import 'scss/darkcolors.scss';
 
+.logo_div {
+	background-image: url("/assets/logo.png");
+}
+
 #darkmode_arrow {
 	filter: invert(100%);
 }
