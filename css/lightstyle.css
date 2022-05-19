@@ -173,7 +173,7 @@ article.bg {
   color: #458588;
 }
 
-#projects_div {
+.projects_div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 40px;
