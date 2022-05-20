@@ -63,6 +63,7 @@ article.skills div {
   display: flex;
   flex-direction: row;
   background-color: #282828;
+  flex-wrap: wrap;
 }
 
 .list_div {

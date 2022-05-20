@@ -51,7 +51,8 @@ article.skills div {
 #skills_div {
 	display: flex;
 	flex-direction: row;
-	background-color: $bg
+	background-color: $bg;
+	flex-wrap: wrap;
 }
 
 .list_div {
