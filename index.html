@@ -22,11 +22,11 @@
 				<div>
 					<h1 id="main_title">Hi, I am <a href="https://github.com/midasvanveen" id="name_span">Midas</a></h1>
 					<p>I am currently a high-school student in the Netherlands. My main focus is on low-level software development and cyber security. Being up close and personal with the hardware is where I thrive. If you would like to contact me feel free to do so using the contact form below!</p>
-					<form id="contact_form">
+					<!--<form id="contact_form">
 						<input id="name_input" type="text" placeholder="Name">
 						<input id="email_input" type="text" placeholder="Email">
 						<textarea id="message_input" rows="3"  placeholder="Message"></textarea>
-					</form>
+					</form>-->
 				</div>
 				<div onclick="toggleMode()" class="rounded mobile_hide" id="logo_background"><div class="rounded logo_div"></div></div>
 				<p class="mobile_hide" id="darkmode_msg">Click me for dark mode</p>
@@ -50,7 +50,7 @@
 			<article class="bg skills">
 				<h1>My <a href="https://github.com/midasvanveen" id="skills_span">Skills</a></h1>
 				<div id="skills_div">
-					<div class="list_div">
+					<div class="list_div" id="main_list">
 						<h2>Programming languages</h2>
 						<ul>
 							<li>C</li>
@@ -74,7 +74,7 @@
 						</ul>
 					</div>
 					<div class="list_div">
-						<h2>Frameworks/crates in rust</h2>
+						<h2>Rust</h2>
 						<ul>
 							<li>Libc</li>
 							<li>Gtk4</li>
@@ -86,7 +86,7 @@
 						</ul>
 					</div>
 					<div class="list_div">
-						<h2>Frameworks/modules in python(3)</h2>
+						<h2>Python</h2>
 						<ul>
 							<li>Pwnlib</li>
 							<li>Matplotlib</li>
@@ -100,7 +100,7 @@
 						</ul>
 					</div>
 					<div class="list_div">
-						<h2>Libraries in c</h2>
+						<h2>C</h2>
 						<ul>
 							<li>Gtk</li>
 							<li>Glut</li>
@@ -111,7 +111,7 @@
 						</ul>
 					</div>
 					<div class="list_div">
-						<h2>Libraries in c++</h2>
+						<h2>C++</h2>
 						<ul>
 							<li>Boost</li>
 							<li>Sfml</li>
@@ -120,20 +120,29 @@
 						</ul>
 					</div>
 					<div class="list_div">
-						<h2></h2>
+						<h2>Node.js</h2>
 						<ul>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
+							<li>React</li>
+							<li>Express</li>
+							<li>Vue</li>
+							<li>Angular2</li>
+							<li>Typescript</li>
+						</ul>
+					</div>
+					<div class="list_div">
+						<h2>Java</h2>
+						<ul>
+							<li>Fabric</li>
+							<li>Lwjgl</li>
+							<li>Aws</li>
+							<li>Android</li>
 						</ul>
 					</div>
 					<div class="list_div">
 						<h2>Other skills</h2>
 						<ul>
+							<li>Html</li>
+							<li>(s)css</li>
 							<li>*Nix system management</li>
 							<li>Windows system management (vista,7,10)</li>
 							<li>Reverse engineering of linux binaries</li>
@@ -141,6 +150,10 @@
 						</ul>
 					</div>
 				</div>
+			</article>
+			<article>
+				<h2>Professional history</h2>
+				<div></div>
 			</article>
 		</main>
 	</body>

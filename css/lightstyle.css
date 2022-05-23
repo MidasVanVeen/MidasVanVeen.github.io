@@ -63,6 +63,7 @@ article.skills div {
 }
 
 .list_div {
+  flex-basis: 20%;
   background-color: #ebdbb2;
   padding: 20px;
   margin: 20px;

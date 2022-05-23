@@ -55,7 +55,11 @@ article.skills div {
 	flex-wrap: wrap;
 }
 
+#main_list {
+}
+
 .list_div {
+	flex-basis: 20%;
     background-color: $bgl;
     padding: 20px;
 	margin: 20px;
