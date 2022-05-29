@@ -1,10 +1,10 @@
 #!/bin/bash
 cat scss/dark.scss > dark.tmp
 cat scss/style.scss >> dark.tmp  
-sass dark.tmp > css/darkstyle.css && echo 'Built dark'
+sass --scss dark.tmp > css/darkstyle.css --trace && echo 'Built dark'
 cat scss/light.scss > light.tmp
 cat scss/style.scss >> light.tmp
-sass light.tmp > css/lightstyle.css && echo 'Built light'
+sass --scss light.tmp > css/lightstyle.css --trace && echo 'Built light'
 rm *.tmp && echo 'Cleanup successful'
 
 tsc
